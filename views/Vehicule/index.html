@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Liste des véhicules</h1>
+
+    <div>
+        {% for vehicule in vehicule %}
+        <div>Id : {{vehicule.id_vehicule}}</div>
+        <div>Marque : {{vehicule.marque}} </div>
+        <div>Modèle : {{vehicule.modele}}</div>
+        <div>Couleur : {{vehicule.couleur}} </div>
+        <div>Immatriculation : {{vehicule.immatriculation}}</div>
+        <a href="">SUPPRIMER</a>
+        <br/><br/>
+</div>
+{% endfor %}
+
+<p>
+
+    <h1>Créer un véhicule :</h1>
+
+    <form action="{{ base_path ~ '/vehicule'}}" method="post">
+
+        <div class="form-group">
+            <label for="">Marque : </label>
+            <input type="text" class="form-control" placeholder="" name="marque" required>
+        </div>
+        <br/> 
+        <div class="form-group">
+            <label for="">Modèle : </label>
+            <input type="text" class="form-control" placeholder="" name="modele" required>
+        </div>
+        <br/> 
+        <div class="form-group">
+            <label for="">Couleur : </label>
+            <input type="text" class="form-control" placeholder="" name="couleur" required>
+        </div>
+        <br/> 
+        <div class="form-group">
+            <label for="">Immatriculation : </label>
+            <input type="text" class="form-control" placeholder="" name="immatriculation" required>
+        </div>
+        <br/> 
+        <button class="btn btn-success">Créer un véhicule</button>
+
+    </form>
+
+{% endblock %}

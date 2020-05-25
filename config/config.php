@@ -8,7 +8,7 @@ const BASE_PATH = "http://localhost/wf3mvc/";
 /**
  * Configuration de la base de données
  */
-const DB_NAME = "nom_de_la_bdd";
+const DB_NAME = "vtc";
 const DB_HOST = "localhost";
 const DB_PORT = "3306";
 const DB_USERNAME = 'root';
