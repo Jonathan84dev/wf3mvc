@@ -48,7 +48,7 @@ class VehiculeController extends AbstractController {
     }
 
     public static function delete($id) {
-  
+        
     }
 
 

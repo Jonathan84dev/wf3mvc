@@ -188,7 +188,5 @@ public static function toObject($array) {
     'id' => $_GET['id']
     ]);  
 
-
-
     }
 }
